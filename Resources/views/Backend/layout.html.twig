@@ -1,0 +1,42 @@
+{% extends 'NetgenMoreAdminUISyliusBundle::pagelayout.html.twig' %}
+{% block sylius_content %}
+        {% include 'NetgenMoreAdminUISyliusBundle:Backend:_navbar.html.twig' %}
+        <div class="row main-container">
+            <div class="col-md-1 col-lg-2 hidden-sm hidden-xs">
+                {% block sidebar %}
+                <div id="sidebar">
+                    <div class="sidebar-nav">
+                        {{ knp_menu_render('sylius.backend.sidebar', {'template': 'SyliusWebBundle::menu.html.twig', 'currentClass': 'active'}) }}
+                    </div>
+                </div>
+                {% endblock %}
+            </div>
+
+            <div class="col-md-11 col-lg-10">
+                <div id="topbar">
+                    {% block topbar %}
+                    {% include 'SyliusWebBundle:Backend:_breadcrumb.html.twig' %}
+                    {% endblock %}
+                </div>
+
+                <div id="content">
+                    {% include 'SyliusWebBundle:Backend:_flashes.html.twig' %}
+
+                    {% block content %}
+                    {% endblock %}
+
+                    <hr>
+
+                    {# Gallery modal #}
+                    {% include 'SyliusWebBundle::gallery.html.twig' %}
+
+                    {# Confirmation modal #}
+                    {% include 'SyliusWebBundle::confirm-modal.html.twig' %}
+
+                    <footer>
+                        <p>&copy; <a href="http://Sylius.org">Sylius</a>, 2011 - {{ 'now'|date('Y') }}.</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+{% endblock %}
