@@ -1,8 +1,8 @@
 parameters:
-    ngmore_admin_ui.menu_plugin.sylius_dashboard.class: Netgen\Bundle\MoreAdminUISyliusBundle\MenuPlugin\SyliusDashboardPlugin
+    ngmore_admin_ui.menu_plugin.sylius.class: Netgen\Bundle\MoreAdminUISyliusBundle\MenuPlugin\SyliusPlugin
 
 services:
     ngmore_admin_ui.menu_plugin.sylius_dashboard:
-        class: %ngmore_admin_ui.menu_plugin.sylius_dashboard.class%
+        class: %ngmore_admin_ui.menu_plugin.sylius.class%
         tags:
             - { name: 'ngmore_admin_ui.menu_plugin', priority: -30 }

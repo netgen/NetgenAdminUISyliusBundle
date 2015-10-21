@@ -11,7 +11,7 @@ namespace Netgen\Bundle\MoreAdminUISyliusBundle\MenuPlugin;
 use Netgen\Bundle\MoreAdminUIBundle\MenuPlugin\MenuPluginInterface;
 use Symfony\Component\HttpFoundation\Request;
 
-class SyliusDashboardPlugin implements MenuPluginInterface
+class SyliusPlugin implements MenuPluginInterface
 {
 
     /**
