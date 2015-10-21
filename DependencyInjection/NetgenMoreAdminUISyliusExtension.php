@@ -25,9 +25,6 @@ class NetgenMoreAdminUISyliusExtension extends Extension
      */
     public function load(array $config, ContainerBuilder $container)
     {
-
-        $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-        $loader->load('services.xml');
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('menu_plugins.yml');
     }
