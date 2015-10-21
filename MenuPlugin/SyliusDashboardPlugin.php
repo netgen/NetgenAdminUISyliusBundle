@@ -41,7 +41,7 @@ class SyliusDashboardPlugin implements MenuPluginInterface
      */
     public function getLeftTemplate()
     {
-        return null;
+        return 'NetgenMoreAdminUISyliusBundle:plugins:sylius_left_menu.html.twig';
     }
 
     /**
@@ -53,6 +53,9 @@ class SyliusDashboardPlugin implements MenuPluginInterface
      */
     public function matches(Request $request)
     {
-        return false;
+
+        // the sylius backend route names always start with "sylius_backend"
+        $currentRoute = $request->attributes->get( '_route' );
+        return ( strpos( $currentRoute, 'sylius_backend') !== false );
     }
 }
