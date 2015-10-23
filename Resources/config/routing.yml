@@ -1,3 +1,0 @@
-sylius_backend:
-    resource: @SyliusWebBundle/Resources/config/routing/backend/main.yml
-    prefix: %ez_sylius.shop_path_prefix%
