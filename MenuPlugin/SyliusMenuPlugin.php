@@ -1,19 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: filip
- * Date: 21.10.15.
- * Time: 10:56
- */
-namespace Netgen\Bundle\MoreAdminUISyliusBundle\MenuPlugin;
 
+namespace Netgen\Bundle\MoreAdminUISyliusBundle\MenuPlugin;
 
 use Netgen\Bundle\MoreAdminUIBundle\MenuPlugin\MenuPluginInterface;
 use Symfony\Component\HttpFoundation\Request;
 
-class SyliusPlugin implements MenuPluginInterface
+class SyliusMenuPlugin implements MenuPluginInterface
 {
-
     /**
      * Returns plugin identifier
      *
@@ -53,9 +46,8 @@ class SyliusPlugin implements MenuPluginInterface
      */
     public function matches(Request $request)
     {
-
-        // the sylius backend route names always start with "sylius_backend"
+        // The sylius backend route names always start with "sylius_backend"
         $currentRoute = $request->attributes->get( '_route' );
-        return ( strpos( $currentRoute, 'sylius_backend') !== false );
+        return ( stripos( $currentRoute, 'sylius_backend' ) !== false );
     }
 }
