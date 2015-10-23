@@ -14,7 +14,7 @@ class SyliusMenuPlugin implements MenuPluginInterface
      */
     public function getIdentifier()
     {
-        return 'sylius_dashboard';
+        return 'sylius';
     }
 
     /**
@@ -24,7 +24,7 @@ class SyliusMenuPlugin implements MenuPluginInterface
      */
     public function getAsideTemplate()
     {
-        return 'NetgenMoreAdminUISyliusBundle:plugins:sylius_menu_item.html.twig';
+        return 'NetgenMoreAdminUISyliusBundle:plugins/menu/sylius:aside.html.twig';
     }
 
     /**
@@ -34,7 +34,7 @@ class SyliusMenuPlugin implements MenuPluginInterface
      */
     public function getLeftTemplate()
     {
-        return 'NetgenMoreAdminUISyliusBundle:plugins:sylius_left_menu.html.twig';
+        return 'NetgenMoreAdminUISyliusBundle:plugins/menu/sylius:aside.html.twig';
     }
 
     /**
