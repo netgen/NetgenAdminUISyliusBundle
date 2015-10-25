@@ -44,23 +44,21 @@
 {% endblock %}
 
 {% block pre_content %}
-<div class="col-md-11 col-lg-10">
-    <div id="topbar">
-        {% block topbar %}
-            {% include 'SyliusWebBundle:Backend:_breadcrumb.html.twig' %}
-        {% endblock %}
-    </div>
+<div id="topbar">
+    {% block topbar %}
+        {% include 'SyliusWebBundle:Backend:_breadcrumb.html.twig' %}
+    {% endblock %}
+</div>
 
-    <div id="content">
-        {% include 'SyliusWebBundle:Backend:_flashes.html.twig' %}
+<div id="content">
+    {% include 'SyliusWebBundle:Backend:_flashes.html.twig' %}
 {% endblock %}
 
 {% block post_content %}
-        {# Gallery modal #}
-        {% include 'SyliusWebBundle::gallery.html.twig' %}
+    {# Gallery modal #}
+    {% include 'SyliusWebBundle::gallery.html.twig' %}
 
-        {# Confirmation modal #}
-        {% include 'SyliusWebBundle::confirm-modal.html.twig' %}
-    </div>
+    {# Confirmation modal #}
+    {% include 'SyliusWebBundle::confirm-modal.html.twig' %}
 </div>
 {% endblock %}
