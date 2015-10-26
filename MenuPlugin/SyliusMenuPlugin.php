@@ -44,7 +44,7 @@ class SyliusMenuPlugin implements MenuPluginInterface
      *
      * @return bool
      */
-    public function matches(Request $request)
+    public function matches( Request $request )
     {
         // The sylius backend route names always start with "sylius_backend"
         $currentRoute = $request->attributes->get( '_route' );
