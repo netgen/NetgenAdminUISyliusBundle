@@ -18,23 +18,16 @@ class SyliusMenuPlugin implements MenuPluginInterface
     }
 
     /**
-     * Returns aside menu template name
+     * Returns the list of templates this plugin supports
      *
-     * @return string
+     * @return array
      */
-    public function getAsideTemplate()
+    public function getTemplates()
     {
-        return 'NetgenMoreAdminUISyliusBundle:menu/plugins/sylius:aside.html.twig';
-    }
-
-    /**
-     * Returns left menu template name
-     *
-     * @return string
-     */
-    public function getLeftTemplate()
-    {
-        return 'NetgenMoreAdminUISyliusBundle:menu/plugins/sylius:left.html.twig';
+        return array(
+            'aside' => 'NetgenMoreAdminUISyliusBundle:menu/plugins/sylius:aside.html.twig',
+            'left' => 'NetgenMoreAdminUISyliusBundle:menu/plugins/sylius:left.html.twig'
+        );
     }
 
     /**
