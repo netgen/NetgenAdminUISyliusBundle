@@ -3,25 +3,34 @@ h4 {
 }
 
 #sidebar {
-    margin-top:0; padding-top:0; background-color:$asideHover; margin-bottom:0; padding-bottom:30px;
+    margin-top:0; padding-top:0; background-color:#e5e5e5; margin-bottom:0; padding-bottom:30px;
     li {
     	a, a:visited {
-    		color:$asideColor;
+    		color:#337ab7;
     	}
     	a {
     		&:hover, &:focus {
-    			background:lighten($asideHover, 5%);
+    			background:rgba(0, 0, 0, 0.025); color:#23527c;
+    		}
+    		i {
+    			color:#9a9a9a;
     		}
     	}
     	&.active {
-    		background:$btnPrimary;
+    		background:#fff;
     		a, a:hover {
-    			background:$btnPrimary; color:#fff;
+    			background:#fff; color:$activeColor;
+    		}
+    		i {
+    			color:$activeColor;
     		}
     	}
     }
     span.nav-header {
-    	border-color:rgba(255,255,255,.1); padding:1em 15px; text-align:left;
+    	border:none; padding:15px 15px 12px; text-align:left; color:#333; font-size:1em; font-weight:600;
+    }
+    .menu_level_1 {
+    	border-bottom:1px solid rgba(0, 0, 0, 0.05); margin-bottom:6px;
     }
 }
 .nav {
