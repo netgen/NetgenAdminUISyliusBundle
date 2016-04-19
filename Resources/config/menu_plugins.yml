@@ -3,6 +3,6 @@ parameters:
 
 services:
     ngmore_admin_ui_sylius.menu_plugin.sylius:
-        class: %ngmore_admin_ui_sylius.menu_plugin.sylius.class%
+        class: "%ngmore_admin_ui_sylius.menu_plugin.sylius.class%"
         tags:
-            - { name: 'ngmore_admin_ui.menu_plugin', priority: -15 }
+            - { name: ngmore_admin_ui.menu_plugin, priority: -15 }
