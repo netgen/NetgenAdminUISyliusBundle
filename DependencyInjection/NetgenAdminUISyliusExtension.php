@@ -1,13 +1,13 @@
 <?php
 
-namespace Netgen\Bundle\MoreAdminUISyliusBundle\DependencyInjection;
+namespace Netgen\Bundle\AdminUISyliusBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader;
 
-class NetgenMoreAdminUISyliusExtension extends Extension
+class NetgenAdminUISyliusExtension extends Extension
 {
     /**
      * {@inheritDoc}

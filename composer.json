@@ -1,6 +1,6 @@
 {
-    "name": "netgen/more-admin-ui-sylius-bundle",
-    "description": "Netgen More Admin UI Sylius Bundle integrates Sylius into Netgen More Admin UI",
+    "name": "netgen/admin-ui-sylius-bundle",
+    "description": "Netgen Admin UI Sylius Bundle integrates Sylius into Netgen Admin UI",
     "authors": [
         {
             "name": "Netgen",
@@ -8,9 +8,9 @@
         }
     ],
     "require": {
-        "netgen/more-admin-ui-bundle": "*"
+        "netgen/admin-ui-bundle": "*"
     },
     "autoload": {
-        "psr-4": {"Netgen\\Bundle\\MoreAdminUISyliusBundle\\": ""}
+        "psr-4": {"Netgen\\Bundle\\AdminUISyliusBundle\\": ""}
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Netgen\Bundle\MoreAdminUISyliusBundle;
+namespace Netgen\Bundle\AdminUISyliusBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class NetgenMoreAdminUISyliusBundle extends Bundle
+class NetgenAdminUISyliusBundle extends Bundle
 {
     /**
      * Returns the bundle parent name.

@@ -1,8 +1,8 @@
 <?php
 
-namespace Netgen\Bundle\MoreAdminUISyliusBundle\MenuPlugin;
+namespace Netgen\Bundle\AdminUISyliusBundle\MenuPlugin;
 
-use Netgen\Bundle\MoreAdminUIBundle\MenuPlugin\MenuPluginInterface;
+use Netgen\Bundle\AdminUIBundle\MenuPlugin\MenuPluginInterface;
 use Symfony\Component\HttpFoundation\Request;
 
 class SyliusMenuPlugin implements MenuPluginInterface
@@ -25,8 +25,8 @@ class SyliusMenuPlugin implements MenuPluginInterface
     public function getTemplates()
     {
         return array(
-            'aside' => 'NetgenMoreAdminUISyliusBundle:menu/plugins/sylius:aside.html.twig',
-            'left' => 'NetgenMoreAdminUISyliusBundle:menu/plugins/sylius:left.html.twig'
+            'aside' => 'NetgenAdminUISyliusBundle:menu/plugins/sylius:aside.html.twig',
+            'left' => 'NetgenAdminUISyliusBundle:menu/plugins/sylius:left.html.twig'
         );
     }
 

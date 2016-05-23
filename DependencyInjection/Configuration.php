@@ -1,6 +1,6 @@
 <?php
 
-namespace Netgen\Bundle\MoreAdminUISyliusBundle\DependencyInjection;
+namespace Netgen\Bundle\AdminUISyliusBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -13,7 +13,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root( 'netgen_more_admin_ui_sylius' );
+        $rootNode = $treeBuilder->root( 'netgen_admin_ui_sylius' );
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
