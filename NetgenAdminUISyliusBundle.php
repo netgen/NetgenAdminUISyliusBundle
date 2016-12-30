@@ -13,6 +13,6 @@ class NetgenAdminUISyliusBundle extends Bundle
      */
     public function getParent()
     {
-        return 'SyliusWebBundle';
+        return 'SyliusAdminBundle';
     }
 }
