@@ -1,5 +1,4 @@
-<div id="sidebar">
-    <div class="sidebar-nav">
-        {{ knp_menu_render( 'sylius.backend.sidebar', { 'template': 'SyliusWebBundle::menu.html.twig', 'currentClass': 'active' } ) }}
-    </div>
+<div class="sylius-sidebar ui vertical menu">
+    <a class="item" href="{{ path('sylius_admin_dashboard') }}"><b>Sylius</b></a>
+    {{ knp_menu_render('sylius.admin.main', {'template': 'SyliusUiBundle:Menu:sidebar.html.twig'}) }}
 </div>
