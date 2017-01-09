@@ -1,0 +1,28 @@
+{% extends 'NetgenAdminUIBundle::pagelayout.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    {% include 'SyliusUiBundle::_stylesheets.html.twig' with {'path': 'assets/admin/css/style.css'} %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    {% include 'SyliusUiBundle::_javascripts.html.twig' with {'path': 'assets/admin/js/app.js'} %}
+{% endblock %}
+
+{% block pre_content %}
+<div class="pusher">
+    <div class="full height" id="wrapper">
+        <div id="content">
+            {% include 'SyliusUiBundle::_flashes.html.twig' %}
+{% endblock %}
+
+{% block post_content %}
+        </div>
+    </div>
+</div>
+
+{% include '@SyliusUi/Modal/_confirmation.html.twig' %}
+{% endblock %}
