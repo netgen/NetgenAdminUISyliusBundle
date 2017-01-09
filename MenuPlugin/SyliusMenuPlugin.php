@@ -27,6 +27,7 @@ class SyliusMenuPlugin implements MenuPluginInterface
         return array(
             'aside' => 'NetgenAdminUISyliusBundle:menu/plugins/sylius:aside.html.twig',
             'left' => 'NetgenAdminUISyliusBundle:menu/plugins/sylius:left.html.twig',
+            'top' => 'NetgenAdminUISyliusBundle:menu/plugins/sylius:top.html.twig',
         );
     }
 
