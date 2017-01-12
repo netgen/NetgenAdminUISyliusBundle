@@ -5,6 +5,9 @@
 .main-content {
     background:#f9fAfb;
 }
+.layout-column.left-column {
+    width:$leftColumnWidth;
+}
 
 .sylius-sidebar.ui.vertical.menu {
     margin:0 -#{$gutter} -#{$gutter};
@@ -35,5 +38,67 @@
         right:0;
         left:auto;
         min-width:100%;
+    }
+}
+
+.ui.table {
+    @media screen and (max-width: 1300px){
+        font-size:12px;
+        td {
+            .ui.button, .ui.buttons .button, .ui.buttons .or {
+                font-size:12px;
+            }
+        }
+    }
+}
+
+.ui.statistic > .value,
+.ui.statistics .statistic > .value {
+    font-size:3em !important;
+    @media screen and (max-width: 1300px) {
+        font-size:2em !important;
+    }
+}
+
+.ui.divided.grid:not([class*="vertically divided"]) {
+    > .column:not(.row),
+    > .row > .column {
+        border-left:1px solid rgba(34,36,38,.15);
+        box-shadow:none;
+        &:first-child {
+            border-left:none;
+        }
+    }
+    @media screen and (max-width: 1100px){
+        &.four {
+            > .column:not(.row),
+            > .row > .column {
+                border-top:1px solid rgba(34,36,38,.15);
+                &:first-child,
+                &:nth-child(2) {
+                    border-top:none;
+                }
+                &:nth-child(odd) {
+                    border-left:none;
+                }
+            }
+        }
+    }
+}
+
+.ui[class*="four column"].grid {
+    @media screen and (max-width: 1100px){
+        > .column:not(.row),
+        > .row > .column {
+            width:50%;
+        }
+    }
+}
+.ui[class*="two column"].grid {
+    @media screen and (max-width: 1250px){
+        > .column:not(.row),
+        > .row > .column {
+            width:100%;
+        }
     }
 }
