@@ -106,3 +106,44 @@ body {
         }
     }
 }
+
+/* show item actions in tree on hover */
+.ui.list.sylius-sortable-list {
+    .header {
+        position:relative;
+        display:inline-block !important;
+        padding:6px;
+        &:hover {
+            .ui.buttons {
+                visibility: visible;
+                width:auto;
+                opacity:1;
+            }
+        }
+    }
+    .ui.buttons {
+        position:absolute;
+        left:100%;
+        top:50%;
+        opacity:0;
+        transform:translateY(-50%);
+        width:0;
+        overflow:hidden;
+        z-index:10;
+        transition:opacity 0.2s;
+    }
+    .list {
+        &:empty {
+            padding:0;
+        }
+        padding-top:2px;
+        > .item {
+            padding:0;
+        }
+    }
+    .item {
+        > i.icon {
+            padding:6px 0 0;
+        }
+    }
+}
