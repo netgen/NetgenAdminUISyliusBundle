@@ -1,8 +1,5 @@
-parameters:
-    netgen_admin_ui_sylius.menu_plugin.sylius.class: Netgen\Bundle\AdminUISyliusBundle\MenuPlugin\SyliusMenuPlugin
-
 services:
     netgen_admin_ui_sylius.menu_plugin.sylius:
-        class: "%netgen_admin_ui_sylius.menu_plugin.sylius.class%"
+        class: Netgen\Bundle\AdminUISyliusBundle\MenuPlugin\SyliusMenuPlugin
         tags:
             - { name: netgen_admin_ui.menu_plugin, priority: -7 }
