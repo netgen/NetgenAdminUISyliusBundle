@@ -1,6 +1,7 @@
 {
     "name": "netgen/admin-ui-sylius-bundle",
     "description": "Netgen Admin UI Sylius Bundle integrates Sylius into Netgen Admin UI",
+    "license": "GPL-2.0",
     "authors": [
         {
             "name": "Netgen",
