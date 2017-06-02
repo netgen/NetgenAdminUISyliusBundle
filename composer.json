@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "netgen/admin-ui-bundle": "^1.0"
+        "netgen/admin-ui-bundle": "^1.0|^2.0"
     },
     "autoload": {
         "psr-4": {"Netgen\\Bundle\\AdminUISyliusBundle\\": ""}
