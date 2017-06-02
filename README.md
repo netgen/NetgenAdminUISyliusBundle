@@ -7,13 +7,19 @@ This bundle integrates Sylius into Netgen Admin UI by adding a menu plugin which
 Use Composer:
 
 ```bash
-composer require netgen/admin-ui-sylius-bundle:^2.0
+$ composer require netgen/admin-ui-sylius-bundle:^2.0
 ```
 
 Activate the bundle inside the kernel:
 
 ```php
 $bundles[] = new Netgen\Bundle\AdminUISyliusBundle\NetgenAdminUISyliusBundle();
+```
+
+Install bundle assets:
+
+```bash
+$ php app/console assets:install --symlink --relative
 ```
 
 and that's it!
