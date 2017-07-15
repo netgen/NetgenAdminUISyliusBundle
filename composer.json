@@ -19,7 +19,7 @@
         "netgen/admin-ui-bundle": "^1.0|^2.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.7"
+        "phpunit/phpunit": "^4.8.35|^5.7"
     },
     "autoload": {
         "psr-4": {"Netgen\\Bundle\\AdminUISyliusBundle\\": ""}
