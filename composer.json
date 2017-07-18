@@ -1,6 +1,13 @@
 {
     "name": "netgen/admin-ui-sylius-bundle",
     "description": "Netgen Admin UI Sylius Bundle integrates Sylius into Netgen Admin UI",
+    "keywords": [
+        "netgen",
+        "admin-ui-sylius-bundle",
+        "ezpublish",
+        "ezplatform",
+        "sylius"
+    ],
     "license": "GPL-2.0",
     "authors": [
         {
@@ -11,6 +18,9 @@
     "require": {
         "netgen/admin-ui-bundle": "^1.0|^2.0"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8.35|^5.7"
+    },
     "autoload": {
         "psr-4": {"Netgen\\Bundle\\AdminUISyliusBundle\\": ""}
     },
@@ -18,5 +28,8 @@
         "branch-alias": {
             "dev-master": "2.0.x-dev"
         }
+    },
+    "scripts": {
+        "test": "@php vendor/bin/phpunit --colors=always"
     }
 }
