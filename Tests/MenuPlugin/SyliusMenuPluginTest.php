@@ -45,26 +45,26 @@ class SyliusMenuPluginTest extends TestCase
 
         $actual = $this->plugin->getTemplates();
 
-        $this->assertTrue(is_array($actual));
+        $this->assertInternalType('array', $actual);
         $this->assertEquals($expected, $actual);
     }
 
     public function testMatches()
     {
         $request = new Request();
-        $request->attributes = new ParameterBag([
+        $request->attributes = new ParameterBag(array(
             '_route' => 'sylius_admin',
-        ]);
+        ));
         $this->assertTrue($this->plugin->matches($request));
 
-        $request->attributes = new ParameterBag([
+        $request->attributes = new ParameterBag(array(
             '_route' => 'test_sylius_admin_test',
-        ]);
+        ));
         $this->assertTrue($this->plugin->matches($request));
 
-        $request->attributes = new ParameterBag([
+        $request->attributes = new ParameterBag(array(
             '_route' => 'sylius_admin_test',
-        ]);
+        ));
         $this->assertTrue($this->plugin->matches($request));
     }
 
@@ -73,9 +73,9 @@ class SyliusMenuPluginTest extends TestCase
         $request = new Request();
         $this->assertFalse($this->plugin->matches($request));
 
-        $request->attributes = new ParameterBag([
+        $request->attributes = new ParameterBag(array(
             '_route' => 'test',
-        ]);
+        ));
         $this->assertFalse($this->plugin->matches($request));
     }
 }
